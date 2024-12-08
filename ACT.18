@@ -1,0 +1,53 @@
+import java.util.ArrayList;
+
+public class StudentListExample {
+    public static void main(String[] args) {
+        // List of student names
+        ArrayList<String> student_name_list = new ArrayList<>();
+        student_name_list.add("Juan Carlos");
+        student_name_list.add("Jose Rizal");
+        student_name_list.add("Juan Luna");
+        student_name_list.add("Andres Bonifacio");
+        student_name_list.add("Justin Bieber");
+        student_name_list.add("Michael Jordan");
+        student_name_list.add("Andrew Jordan");
+        student_name_list.add("Jessa Boe");
+        student_name_list.add("Ted Talk");
+
+        // List of student sections
+        ArrayList<String> student_section_list = new ArrayList<>();
+        student_section_list.add("BSIT-4B");
+        student_section_list.add("BSIT-2A");
+        student_section_list.add("BSIT-3A");
+        student_section_list.add("BSIT-3A");
+        student_section_list.add("BSIT-2A");
+        student_section_list.add("BSIT-4A");
+        student_section_list.add("BSIT-4A");
+        student_section_list.add("BSIT-2B");
+        student_section_list.add("BSIT-3B");
+
+        // List of student IDs
+        ArrayList<Integer> student_id_list = new ArrayList<>();
+        for (int i = 1; i <= 9; i++) {
+            student_id_list.add(i);
+        }
+
+        // List of student emails
+        ArrayList<String> student_email_list = new ArrayList<>();
+        student_email_list.add("juan@gmail.com");
+        student_email_list.add("jose@gmail.com");
+        student_email_list.add("juanl@gmail.com");
+        student_email_list.add("andres@gmail.com");
+        student_email_list.add("justin@gmail.com");
+        student_email_list.add("michael@gmail.com");
+        student_email_list.add("andrew@gmail.com");
+        student_email_list.add("jessa@gmail.com");
+        student_email_list.add("ted@gmail.com");
+
+        // Print student data
+        for (int i = 0; i < student_name_list.size(); i++) {
+            System.out.println("ID: " + student_id_list.get(i) + ", Name: " + student_name_list.get(i) + ", Section: " + student_section_list.get(i) + ", Email: " + student_email_list.get(i));
+        }
+    }
+}
+
